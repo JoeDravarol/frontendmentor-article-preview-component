@@ -11,6 +11,133 @@
 body {
   font-size: 13px;
   font-family: "Manrope", Arial, Helvetica, sans-serif;
+  background: #ecf2f8;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+  padding: 5em 0;
+}
+
+.article {
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.article__image {
+  max-width: 100%;
+  border-radius: 10px;
+  border-bottom-left-radius: initial;
+  border-bottom-right-radius: initial;
+}
+
+.article__body {
+  padding: 2em;
+  padding-bottom: calc(2em / 2);
+}
+
+.article__heading {
+  color: #48556a;
+  font-size: 1.4em;
+}
+
+.article__content {
+  color: #6d7f97;
+  margin: 1.5em 0;
+}
+
+.article__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+  position: relative;
+  overflow: hidden;
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.author__avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 1em;
+}
+
+.author__name {
+  color: #48556a;
+  font-size: 1.05em;
+}
+
+.author__date {
+  color: #9eafc2;
+}
+
+.share__social-icons {
+  background: #48556a;
+  padding: 2em;
+  border-radius: 10px;
+  border-top-left-radius: initial;
+  border-top-right-radius: initial;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2.5fr 1fr 1fr 1fr 2fr;
+      grid-template-columns: 2.5fr 1fr 1fr 1fr 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.share__social-icons--active {
+  visibility: initial;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.share__heading {
+  color: #9eafc2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+
+.share__btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .attribution {
