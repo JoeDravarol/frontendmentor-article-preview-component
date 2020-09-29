@@ -140,6 +140,14 @@ body {
   z-index: 10;
 }
 
+.share__btn:hover, .share__btn--active {
+  background: #6d7f97;
+}
+
+.share__btn:hover path, .share__btn--active path {
+  fill: white;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

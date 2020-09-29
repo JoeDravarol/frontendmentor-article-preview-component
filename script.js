@@ -4,5 +4,6 @@
   
   shareBtn.addEventListener('click', () => {
     shareTooltip.classList.toggle('share__social-icons--active')
+    shareBtn.classList.toggle('share__btn--active')
   })
 })()
