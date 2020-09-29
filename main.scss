@@ -149,3 +149,49 @@ body {
     color: hsl(228, 45%, 44%);
   }
 }
+
+@media (min-width: 1440px) {
+  $article-body-padding: 3em;
+
+  .wrapper {
+    width: initial;
+    height: 95vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .article {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    max-width: 900px;
+
+    &__image {
+      border-radius: 10px;
+      min-width: 350px;
+      border-top-right-radius: initial;
+      border-bottom-right-radius: initial;
+      object-fit: cover;
+      object-position: left;
+    }
+
+    &__body {
+      padding: $article-body-padding;
+      padding-bottom: calc(#{$article-body-padding} / 2)
+    }
+
+    &__heading {
+      font-size: 1.9em;
+    }
+
+    &__content {
+      font-size: 1.2em;
+    }
+  }
+
+  .article__footer {
+    padding: $article-body-padding;
+    padding-top: initial;
+  }
+}
