@@ -89,7 +89,7 @@ body {
 .share {
   &__social-icons {
     background: $dark-grayish-blue;
-    padding: 2em;
+    padding: $article-body-padding;
     border-radius: 10px;
     border-top-left-radius: initial;
     border-top-right-radius: initial;
@@ -193,5 +193,43 @@ body {
   .article__footer {
     padding: $article-body-padding;
     padding-top: initial;
+    overflow: initial;
+  }
+
+  .share {
+    &__social-icons {
+      width: 250px;
+      border-radius: 10px;
+      padding: 1.5em;
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 1em;
+      justify-content: center;
+      justify-items: center;
+
+      top: -82px;
+      right: -69px;
+      left: initial;
+      bottom: initial;
+      transform: translateY(50%);
+      
+      // Arrow
+      &::after {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background: $dark-grayish-blue;
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      &--active {
+        transform: translateY(0);
+      }
+    }
   }
 }
